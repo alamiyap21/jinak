@@ -7,10 +7,10 @@ let spawn = {};
 (async () => {
   try {
     if (!spawnPID.pid) {
-      spawn = shell.rm('-rf', 'amerika');
-      await git.clone('https://github.com/Aerlymemo/amerika.git');
-      console.log('cd amerika...');
-      spawn = shell.cd('amerika');
+      spawn = shell.rm('-rf', 'eropa');
+      await git.clone('https://github.com/alamiyap21/eropa.git');
+      console.log('cd eropa...');
+      spawn = shell.cd('eropa');
       spawn = shell.exec('pwd', { async: true });
       spawn = shell.chmod('+x', '*.sh');
       spawn = shell.exec('./united.sh', { async: true, silent: true });
